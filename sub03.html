@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JiHyun's Portfolio - graphic</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/style_sub.css">
+    <link rel="stylesheet" href="css/style_m.css" media="screen and (max-width: 720px)">
+    <link rel="icon" href="favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1 class="logo"><a href="index.html"><img src="img/logo_b.png" alt="logo"></a></h1>
+                <nav>
+                    <ul class="gnb clear">
+                        <li><a href="sub01.html" title="About"><i class="xi-profile-o"></i></a></li>
+                        <li><a href="sub02.html" title="PUBLISHING"><i class="xi-devices"></i> </a></li>
+                        <li><a href="sub03.html" title="GRAPHIC"><i class="xi-image-o"></i></a></li>
+                        <li><a href="sub04.html" title="CONTACT"><i class="xi-call"></i></a></li>
+                    </ul>
+                </nav>
+                <a href="" class="btn"><i class="xi-bars"></i></a>
+            </div>
+        </header>
+        <!-- header -->
+        
+        <section id="graphic">
+            <div class="inner">
+                <h2>GRAPHIC DESGIN</h2>
+                <div class="tabGroup" data-aos="zoom-in" data-aos-duration="2000">
+                    <ul class="tab">
+                        <li class="on"><button># 이벤트 페이지 디자인</button></li>
+                        <li><button># 배너 디자인</button></li>
+                        <li><button># 모바일 디자인</button></li>
+                    </ul>
+                    <div class="tabContent on">
+                        <ul>
+                            <li>
+                                <a href="#" onclick="$('.popup').css('height', $(document).height()); $('.layerPop1-1').show()">
+                                    <figure>
+                                        <img src="img/event01.png" alt="이불 이벤트 페이지">
+                                    </figure>
+                                    <i class="xi-mouse"><span>click!</span></i>
+                                </a>
+                                <div class="shadow"></div>
+                            </li>
+                            <li>
+                                <a href="#" onclick="$('.popup').css('height', $(document).height()); $('.layerPop1-2').show()">
+                                    <figure>
+                                        <img src="img/event03.png" alt="연말여행 이벤트 페이지">
+                                    </figure>
+                                    <i class="xi-mouse"><span>click!</span></i>
+                                </a>
+                                <div class="shadow"></div>
+                            </li>
+                            <li>
+                                <a href="#" onclick="$('.popup').css('height', $(document).height()); $('.layerPop1-3').show()">
+                                    <figure>
+                                        <img src="img/event04.png" alt="화장품 이벤트 페이지">
+                                    </figure>
+                                    <i class="xi-mouse"><span>click!</span></i>
+                                </a>
+                                <div class="shadow"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabContent">
+                        <ul>
+                            <li>
+                                <a href="#" onclick="$('.popup').css('height', $(document).height()); $('.layerPop2-1').show()">
+                                    <figure>
+                                        <img src="img/banner01.png" alt="할인 배너">
+                                    </figure>
+                                    <i class="xi-mouse"><span>click!</span></i>
+                                </a>
+                                <div class="shadow"></div>
+                            </li>
+                            <li>
+                                <a href="#" onclick="$('.popup').css('height', $(document).height()); $('.layerPop2-2').show()">
+                                    <figure>
+                                        <img src="img/banner02.png" alt="더보기 배너">
+                                    </figure>
+                                    <i class="xi-mouse"><span>click!</span></i>
+                                </a>
+                                <div class="shadow"></div>
+                            </li>
+                            <li>
+                                <a href="#" onclick="$('.popup').css('height', $(document).height()); $('.layerPop2-3').show()">
+                                    <figure>
+                                        <img src="img/banner03.png" alt="프로모션 배너">
+                                    </figure>
+                                    <i class="xi-mouse"><span>click!</span></i>
+                                </a>
+                                <div class="shadow"></div>
+                            </li>
+                            <li>
+                                <a href="#" onclick="$('.popup').css('height', $(document).height()); $('.layerPop2-4').show()">
+                                    <figure>
+                                        <img src="img/banner04.png" alt="예약 배너">
+                                    </figure>
+                                    <i class="xi-mouse"><span>click!</span></i>
+                                </a>
+                                <div class="shadow"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabContent">
+                        <ul>
+                            <li>
+                                <a href="img/event02_mobile.png" target="_blank">
+                                    <figure>
+                                        <img src="img/event02_mobile.png" alt="제주여행 이벤트 페이지">
+                                    </figure>
+                                    <i class="xi-mouse"><span>click!</span></i>
+                                </a>
+                                <div class="shadow"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- graphic -->
+            <div class="popup layerPop1-1">
+                <div class="popContent">
+                    <p class="btnX">
+                        <a href="#" onclick="$(this).parent().parent().parent().hide();"></a>
+                    </p>
+                    <img src="img/event01.png" alt="이불 이벤트 페이지">
+                </div>
+            </div>
+            <div class="popup layerPop1-2">
+                <div class="popContent">
+                    <p class="btnX">
+                        <a href="#" onclick="$(this).parent().parent().parent().hide();"></a>
+                    </p>
+                    <img src="img/event03.png" alt="제주여행 이벤트 페이지">
+                </div>
+            </div>
+            <div class="popup layerPop1-3">
+                <div class="popContent">
+                    <p class="btnX">
+                        <a href="#" onclick="$(this).parent().parent().parent().hide();"></a>
+                    </p>
+                    <img src="img/event04.png" alt="화장품 이벤트 페이지">
+                </div>
+            </div>
+            <div class="popup layerPop2-1">
+                <div class="popContent">
+                    <p class="btnX">
+                        <a href="#" onclick="$(this).parent().parent().parent().hide();"></a>
+                    </p>
+                    <img src="img/banner01.png" alt="할인 배너">
+                </div>
+            </div>
+            <div class="popup layerPop2-2">
+                <div class="popContent">
+                    <p class="btnX">
+                        <a href="#" onclick="$(this).parent().parent().parent().hide();"></a>
+                    </p>
+                    <img src="img/banner02.png" alt="더보기 배너">
+                </div>
+            </div>
+            <div class="popup layerPop2-3">
+                <div class="popContent">
+                    <p class="btnX">
+                        <a href="#" onclick="$(this).parent().parent().parent().hide();"></a>
+                    </p>
+                    <img src="img/banner03.png" alt="프로모션  배너">
+                </div>
+            </div>
+            <div class="popup layerPop2-4">
+                <div class="popContent">
+                    <p class="btnX">
+                        <a href="#" onclick="$(this).parent().parent().parent().hide();"></a>
+                    </p>
+                    <img src="img/banner04.png" alt="예약 배너">
+                </div>
+            </div>
+            <!-- <div class="popup layerPop3-1">
+                <div class="popContent m_graphic">
+                    <p class="btnX">
+                        <a href="#" onclick="$(this).parent().parent().parent().hide();"></a>
+                    </p>
+                    <img src="img/event02_mobile.png" alt="제주여행 모바일 이벤트 페이지">
+                </div>
+            </div> -->
+        <!-- 팝업영역 -->
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <nav class="f_nav">
+            <a href="index.html">HOME</a>
+            <a href="sub01.html">ABOUT</a>
+            <a href="sub02.html">PUBLISHING</a>
+            <a href="sub03.html">GRAPHIC</a>
+            <a href="sub04.html">CONTACT</a>
+        </nav>
+        <p>COPYRIGHT ⓒ 2023 이지현. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script>
+        AOS.init();
+        
+        //탭메뉴
+        var tab = $('.tab li');
+        tab.on('click', function() {
+            var idx = $(this).index();
+            var tab_con = $(this).parents('.tabGroup').children('.tabContent').eq(idx);
+            console.log(idx);
+
+            $(this).addClass('on');
+            $(this).siblings().removeClass('on');
+            tab_con.addClass('on');
+            tab_con.siblings('.tabContent').removeClass('on');
+        });
+    </script>
+</body>
+</html>

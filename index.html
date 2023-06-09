@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JiHyun's Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/style_m.css" media="screen and (max-width: 720px)">
+    <link rel="icon" href="favicon.ico">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <h2>JI HYUN'S <br> <span>Portfolio</span></h2>
+        <div class="text">
+            <span class="text"></span>
+        </div>
+
+        <!-- contents -->
+        <section class="contents">
+            <a href="sub04.html">
+                <article class="main01">
+                    <h2>CONTACT</h2>
+                    <div></div>
+                    <h3>저의 포트폴리오를 보시는 분의 <br>연락을 기다립니다.</h3>
+                </article>
+            </a>
+            <a href="sub03.html">
+                <article class="main02">
+                    <h2>GRAPHIC</h2>
+                    <div></div>
+                    <h3>이벤트 페이지, 배너 등 <br>디자인 작업 결과물이 담겨 있습니다.</h3>
+                </article>
+            </a>
+            <a href="sub02.html">
+                <article class="main03">
+                    <h2>PUBLISHING</h2>
+                    <div></div>
+                    <h3>열심히 배워 스스로 작업한 결과물 입니다.</h3>
+                </article>
+            </a>
+            <a href="sub01.html">
+                <article class="main04">
+                    <h2>ABOUT</h2>
+                    <div></div>
+                    <h3>"이지현"에 대해 알고 싶지 않으신가요? <br> 저를 소개합니다.
+                    </h3>
+                </article>
+            </a>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <nav class="f_nav">
+                <a href="index.html">HOME</a>
+                <a href="sub01.html">ABOUT</a>
+                <a href="sub02.html">PUBLISHING</a>
+                <a href="sub03.html">GRAPHIC</a>
+                <a href="sub04.html">CONTACT</a>
+            </nav>
+            <p>COPYRIGHT ⓒ 2023 이지현. ALL RIGHTS RESERVED.</p>
+        </footer>
+    </div>
+    
+    <script>
+        //글자 타이핑
+        const $text = document.querySelector(".h2");
+        const content = "반갑습니다. \n 신입 웹디자이너 & 퍼블리셔 이지현 입니다!";
+        const text = document.querySelector(".text");
+        let i = 0;
+
+        function typing(){
+            if (i < content.length) {
+            let txt = content.charAt(i);
+            text.innerHTML += txt=== "\n" ? "<br/>": txt;
+            i++;
+            }
+        }
+        setInterval(typing, 100)
+
+        //마우스 오버시 article의 width 변화
+        $('article').on('mouseover', function() {
+                $(this).stop().animate({
+                    width: '20%'
+                }, 600, function(){
+                    //none 처리된 h3 요소를 나타냄
+                    $(this).find('h3').css('display', 'block');
+                    //article의 너비를 20%로 넓힌 후 실행
+                    $(this).find('h3').stop().animate({
+                        right: '30px'                        
+                    },200);
+                });
+            });
+            /*마우스 아웃시*/
+            $('article').on('mouseout', function() {
+            $(this).stop().animate({width: '15%'}, 700);
+            $(this).find('h3').stop().animate({right: '-310px'}, 200);
+        });
+    </script>
+</body>
+</html>
